@@ -1,4 +1,4 @@
-# TODO List [Graphql - Apollo - Express]
+# PEGA TODO List [Postgres - Express - Graphql - Apollo]
 
 A small experience for graphQL
 
@@ -9,7 +9,7 @@ To run this project:
 - **Clone the repo**
 
 ```bash
-gh repo clone shahmarasy/pega-Express-Apollo-PG
+gh repo clone shahmarasy/PEGA-Simple
 ```
 
 - **Install all the dependencies**
