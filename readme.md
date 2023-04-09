@@ -9,7 +9,7 @@ To run this project:
 - **Clone the repo**
 
 ```bash
-gh repo clone shahmarasy/pega
+gh repo clone shahmarasy/pega-Express-Apollo-PG
 ```
 
 - **Install all the dependencies**
