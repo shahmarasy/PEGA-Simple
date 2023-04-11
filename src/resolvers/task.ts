@@ -58,7 +58,30 @@ export class TaskResolver {
         }
     }
 
-
+    @Mutation(() => Boolean, { nullable: true })
+    updateTitle(
+        // The id of the task to update
+        @Arg("id", () => Int)
+        id: number,
+        // The title of the task to update
+        @Arg("title", () => String)
+        title: string
+    ): boolean | null {
+        // Find the task with the given id in the database
+        const task = Task.findOneBy({ id })
+        // If the task is not found, return null    
+        if (!task) {
+            return null;
+        }
+        try {
+            // Update the task with the given id and title
+            Task.update({ id }, { title })
+            return true;
+        } catch {
+            return false
+        }
+    }
+    
     // Mutation for deleting a task
     @Mutation(() => Boolean)
     deleteTask(
